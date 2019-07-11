@@ -1,0 +1,58 @@
+/* ==========================================================================
+   #SEARCH BAR
+   ========================================================================== */
+
+/**
+ * This is a component. Extend inuitcss by building your own components
+ * that make up your UI. Component classes are prefixed with a `c-`.
+ */
+ 
+ .c-carousel {
+  display: block;
+  width: 100%;
+ }
+ .flickity-prev-next-button{
+   border-radius: 0;
+   background-color: $light-color;
+   widows: 40px;
+   height: 40px;
+   top: 0;
+   margin: 0;
+   transform: translate(0,0);
+   top: -55px;
+   transition: all 200ms linear;
+   &:hover{
+    transition: all 200ms linear;
+    background-color: $light-color;
+    opacity: .6;
+   }
+   .flickity-button-icon {
+      position: absolute;
+      left: 30%;
+      top: 30%;
+      width: 40%;
+      height: 39%;
+  }
+ }  
+ .flickity-prev-next-button.previous{
+  left : auto;
+  right:60px;
+ }
+ .flickity-prev-next-button.next{
+
+ }
+ /* Mobile & Tablet
+    ========================================================================== */
+ 
+ @media(max-width:1023px) {}
+ 
+ @media(max-width:650px) {
+      .c-carousel{
+         padding-top: 60px;
+      }
+      .flickity-prev-next-button{
+         top: 0 !important;
+      }
+ }
+ 
+ 

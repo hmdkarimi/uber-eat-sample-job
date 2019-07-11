@@ -1,0 +1,20 @@
+/* ==========================================================================
+   #BODY  ELEMENT
+   ========================================================================== */
+
+/**
+ * general style for body
+ */
+
+body{
+    font-family: $font-family;
+    background-color: $body-background;
+    font-size: $global-font-size;
+    padding: 0;
+    margin: 0;    
+}
+body * , body a, body image{
+    outline: none !important;
+}
+
+

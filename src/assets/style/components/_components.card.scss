@@ -1,0 +1,50 @@
+/* ==========================================================================
+   #SEARCH BAR
+   ========================================================================== */
+
+/**
+ * This is a component. Extend inuitcss by building your own components
+ * that make up your UI. Component classes are prefixed with a `c-`.
+ */
+
+ .c-card{
+
+ }
+.c-card__img{
+  height: 240px;
+  width: 100%;
+  object-fit: cover;
+}
+.c-card__title{
+
+}
+.c-card__info{
+  list-style-type: none;
+  li{
+    color: $gray-color;
+    font-size: 14px;
+    margin-right: 3px;
+  }
+}
+.c-card__tags{
+
+}
+.c-card__tag{
+  padding:  $base-unit $base-unit-x;
+  background-color: $light-color;
+  margin-right:  $base-unit;
+}
+
+
+ /* Mobile & Tablet
+    ========================================================================== */
+ 
+ @media(max-width:1023px) {}
+ 
+ @media(max-width:650px) {
+  .o-container-fluid {
+    padding: 0 20px;
+  }
+ }
+ 
+ 

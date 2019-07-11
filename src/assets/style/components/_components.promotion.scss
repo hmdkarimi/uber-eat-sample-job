@@ -1,0 +1,47 @@
+/* ==========================================================================
+   #SEARCH BAR
+   ========================================================================== */
+
+/**
+ * This is a component. Extend inuitcss by building your own components
+ * that make up your UI. Component classes are prefixed with a `c-`.
+ */
+ .c-promotion-card{
+    .u-primary-text-color{
+      text-decoration: none;
+      font-size: 16px;
+      &:hover{
+        text-decoration: underline;
+        color:$primary-color !important;
+      }
+    }
+ }  
+.c-promotion-card__img{
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.c-promotion-card__title{
+  font-size:$global-heading-tablet;
+  font-weight: 400;
+}
+.c-promotion-card__dl-app{
+  list-style: none;
+  li{
+    font-size: 16px;
+    padding-right: $base-unit-x;
+  }
+}
+ /* Mobile & Tablet
+    ========================================================================== */
+ 
+ @media(max-width:1023px) {}
+ 
+ @media(max-width:650px) {
+  .c-promotion-card{
+    margin: $base-unit-x 0;
+  }
+  .c-promotion-card__title{font-size: 22px;}
+ }
+ 
+ 

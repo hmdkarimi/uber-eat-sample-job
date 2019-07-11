@@ -1,0 +1,81 @@
+/* ==========================================================================
+   #SEARCH BAR
+   ========================================================================== */
+
+/**
+ * This is a component. Extend inuitcss by building your own components
+ * that make up your UI. Component classes are prefixed with a `c-`.
+ */
+ .c-searchbar{
+    background-color: lighten($primary-color,35%);
+    position: relative;
+    overflow: hidden;
+
+ }
+
+ .c-searchbar__title{
+    font-size: $global-heading;
+    font-weight: 400;
+    position: relative;
+    z-index:2;
+ }
+ .c-searcbar__form{
+   margin-top:40px;
+   position: relative;
+   z-index:2;
+   width: 100%;
+    input{
+      box-shadow: inset 0px -1px 0px #E0E0E0;
+      -webkit-transition: box-shadow 0.3s ease-in-out;
+      -moz-transition: box-shadow 0.3s ease-in-out;
+      transition: box-shadow 0.3s ease-in-out;
+      padding: $base-unit-x $base-unit-xx;
+      // background: #fff;
+      appearance: none;
+      -webkit-appearance: none;
+      border:none;
+      background: url(assets/img/marker.jpg) no-repeat 10px 50% #fff;
+      background-size: 20px 23px !important;
+      padding-left: 32px;
+      width: 100%;
+      &:focus{
+        box-shadow: inset 0px -2px 0px #1F1F1F;
+        -webkit-transition: box-shadow 0.3s ease-in-out;
+        -moz-transition: box-shadow 0.3s ease-in-out;
+        transition: box-shadow 0.3s ease-in-out;
+      }
+  
+    }
+ }
+.c-searchbar__left-img{
+  position: absolute;
+  z-index: 0;
+  left: 0;
+  top: 0;
+
+}
+.c-searchbar__right-img{
+  position: absolute;
+  z-index: 0;
+  right: 0;
+  bottom: 0;
+
+}
+
+ /* Mobile & Tablet
+    ========================================================================== */
+ 
+ @media(max-width:1023px) {}
+ 
+ @media(max-width:650px) {
+  .c-searchbar__title {
+    font-size: 28px !important;
+    text-align: center;
+  }
+  .c-searcbar__form {
+      padding: 0 20px;
+      margin: 0;
+  }
+ }
+ 
+ 

@@ -1,0 +1,44 @@
+/* ==========================================================================
+   #FOOTER
+   ========================================================================== */
+
+/**
+ * This is a component. Extend inuitcss by building your own components
+ * that make up your UI. Component classes are prefixed with a `c-`.
+ */
+ #footer{
+    background-color: $dark-color;
+ }
+ .c-footer__nav{
+    padding-bottom: 30px;
+    border-bottom: 1px solid #fff;
+ }
+.c-footer__nav-menu{
+   list-style: none;
+   li{
+      margin-bottom: 16px;
+      a{
+         color: #fff;
+         text-decoration: none;
+         font-size: 16px;
+         transition: all 200ms linear;
+         &:hover{
+            text-decoration: underline;
+         }
+
+      }
+   }
+}
+.c-footer__copyright{
+   color: #fff;
+}
+ /* Mobile & Tablet
+    ========================================================================== */
+ 
+ @media(max-width:1023px) {}
+ 
+ @media(max-width:650px) {
+
+ }
+ 
+ 

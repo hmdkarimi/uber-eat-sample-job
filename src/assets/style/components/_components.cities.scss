@@ -1,0 +1,35 @@
+/* ==========================================================================
+   #CITIES LIST
+   ========================================================================== */
+
+/**
+ * This is a component. Extend inuitcss by building your own components
+ * that make up your UI. Component classes are prefixed with a `c-`.
+ */
+ .c-cities{
+   list-style: none;
+ }
+ .c-cities__item{
+   font-size: 16px;
+   color: $dark-color;
+   text-decoration: none;
+   transition:all 200ms linear;
+   &:hover{
+     color: darken($primary-color,20%);
+     transition:all 200ms linear;
+   }
+ }
+ /* Mobile & Tablet
+    ========================================================================== */
+ 
+ @media(max-width:1023px) {}
+ 
+ @media(max-width:650px) {
+  .c-cities {
+    list-style: none;
+    box-sizing: border-box;
+    margin: 0;
+}
+ }
+ 
+ 

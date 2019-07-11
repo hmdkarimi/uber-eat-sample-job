@@ -1,0 +1,124 @@
+/* ==========================================================================
+   #BUTTONS
+   ========================================================================== */
+
+// Buttons
+//
+// Button Component Main Class is "c-btn".
+//
+// Markup: markup/buttons.hbs
+//
+// .c-btn--primary   - Style for Primary Button Style.
+// .c-btn--dark    - Style for Dark Button Style.     
+// .c-btn--light    - Style for Light Button Style.
+// .c-btn--gray    - Style for Gray Button Style.
+//
+// Style guide: components.button
+
+/**
+ * This is a component. Extend inuitcss by building your own components
+ * that make up your UI. Component classes are prefixed with a `c-`.
+ */
+
+.c-btn{
+  display: inline-block;
+  box-sizing: border-box;
+  cursor: pointer;
+  padding: $base-unit-x $base-unit-xx;
+  @include transition();
+  appearance: none;
+  -webkit-appearance: none;
+  font-size:16px;
+  white-space: nowrap;
+}
+
+
+
+
+/* Style Variants
+   ========================================================================== */
+
+/**
+* Styles for Button Color
+*/
+.c-btn--primary{
+  background-color: $primary-color;
+  color: #fff;
+  transition: all 200ms linear;
+  &:hover{
+    transition: all 200ms linear;
+    background-color: lighten($primary-color,10%)
+  }
+}
+
+/**
+* Styles for Button Types
+*/
+
+.c-btn.has-shadow{
+  box-shadow: 0 1px 6px 0px rgba(0, 0, 0, .3);
+}
+
+.c-btn--rounded{
+border-radius: 999px;
+padding: 10px 15px;
+}
+
+.c-btn__icon{
+  margin-left:$base-unit-x ;
+}
+
+
+/**
+* Styles for Button Size
+*/
+
+.c-btn--small {
+  padding: 5px 15px;
+  font-size: 12px;
+}
+
+.c-btn--normal{
+  padding: $base-unit-x $base-unit-xxx;
+}
+
+.c-btn--medium {
+
+  padding: 20px 25px;
+  font-size: 16px;
+}
+
+.c-btn--wide {
+
+  padding:$base-unit-x  30px;
+  font-size: 16px;
+}
+
+
+.c-btn--large{
+    
+  padding: 25px 40px;
+  font-size: 14px;
+}
+
+.c-btn--full{
+  width: 100%;
+}
+
+
+
+
+/* Mobile & Tablet
+   ========================================================================== */
+
+@media(max-width:1023px) {}
+
+@media(max-width:650px) {
+  .c-btn{
+    margin-top:$base-unit;
+    margin-bottom:$base-unit;
+    padding-left: $base-unit-x;
+    padding-right: $base-unit-x;
+  }
+}
+

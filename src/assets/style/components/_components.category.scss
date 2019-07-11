@@ -1,0 +1,48 @@
+/* ==========================================================================
+   #CATEGORY ITEMS
+   ========================================================================== */
+
+/**
+ * This is a component. Extend inuitcss by building your own components
+ * that make up your UI. Component classes are prefixed with a `c-`.
+ */
+ 
+ /* Category Circle Items
+    ========================================================================== */
+    .c-category{
+      list-style: none;;
+    }
+    .c-category__item{
+      list-style: none;
+    }
+    .c-category__item__img{
+      // -webkit-clip-path: circle(35% at 50% 50%);
+      // clip-path: circle(35% at 50% 50%);
+
+      width: 200px;    
+      max-width: 100%;  
+      height: 200px;
+      border-radius: 50%;
+      object-fit: cover;
+      display: block;
+      margin: 0 auto;
+    }
+    .c-category__item__title{
+      color: $dark-color;
+      text-decoration: none;
+      text-align: center;
+      font-weight: normal;
+      
+      
+    }
+
+ /* Mobile & Tablet
+    ========================================================================== */
+ 
+ @media(max-width:1023px) {}
+ 
+ @media(max-width:650px) {
+
+ }
+ 
+ 
