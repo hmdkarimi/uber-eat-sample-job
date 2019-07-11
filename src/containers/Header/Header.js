@@ -12,15 +12,18 @@ class Header extends Component {
   }
 
 
+
   render() {
     return (
       <Aux>
 
-
-            <header id="header" className="clearfix">  
-                <Nav/>           
-            </header>
-      
+       
+              <header id="header" className="clearfix"> 
+              
+                  <Nav/>       
+              
+              </header>
+            
       </Aux>
             
 

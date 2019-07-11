@@ -29,6 +29,17 @@ class Home extends Component {
       
   }
 
+  _handleWaypointEnter = () =>{
+      
+    document.getElementsByClassName("c-nav__search")[0].classList.remove("active")
+
+  }
+  _handleWaypointLeave = () =>{
+    
+    document.getElementsByClassName("c-nav__search")[0].classList.add("active")
+
+  }
+
   render() {
     if(this.props.home.length < 1){
       return <h1>Loading</h1>;
@@ -39,7 +50,7 @@ class Home extends Component {
 
       <Aux>
         <section className="u-display-flex u-flex-row u-justify-content-center u-align-items-center c-searchbar u-xlarge-padding-vertical u-large-margin-bottom">
-            <SearchBar/>
+            <SearchBar _handleWaypointEnter={this._handleWaypointEnter} _handleWaypointLeave={this._handleWaypointLeave}/>
         </section>
     
         <section className="u-display-flex u-flex-column o-container-fluid">

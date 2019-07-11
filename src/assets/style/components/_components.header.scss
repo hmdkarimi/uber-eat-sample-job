@@ -9,7 +9,12 @@
  
  #header{
    background-color: #fff;
-   padding: 15px 0;
+   padding: 5px 0;
+   position: fixed;
+   top: 0;
+   left: 0;
+   width: 100%;
+   z-index: 55;
  }
  .c-nav__link{
    text-decoration: none;
@@ -19,6 +24,54 @@
     transition: all 200ms linear;
     color: $primary-color;
    }
+ }
+ .c-nav__search{
+   width: 500px;
+   max-width: 90%;
+   position: relative;
+   &:after{
+     position: absolute;
+     right: 0;
+     top: 0;
+     z-index: 2;
+     width: 100%;
+     height: 100%;
+     display: block;
+     background-color: #fff;
+     content:"";
+     transition: width 500ms ease-out;
+     transform-origin: right;
+   }
+   &.active{
+    &:after{
+      transition: width 500ms ease-out;
+      transform-origin: right;
+      width: 0px;
+    }
+   }
+ }
+ .c-nav__search-input{
+  
+  box-shadow: inset 0px -1px 0px #E0E0E0;
+  -webkit-transition: box-shadow 0.3s ease-in-out;
+  -moz-transition: box-shadow 0.3s ease-in-out;
+  transition: box-shadow 0.3s ease-in-out;
+  padding: $base-unit-xxx $base-unit-xx;
+  // background: #fff;
+  appearance: none;
+  -webkit-appearance: none;
+  border:none;
+  background: url(assets/img/marker.jpg) no-repeat 10px 50% #F5F5F5;
+  background-size: 20px 23px !important;
+  padding-left: 40px;
+  width: 100%;
+  &:focus{
+    box-shadow: inset 0px -2px 0px #1F1F1F;
+    -webkit-transition: box-shadow 0.3s ease-in-out;
+    -moz-transition: box-shadow 0.3s ease-in-out;
+    transition: box-shadow 0.3s ease-in-out;
+  }
+
  }
  /* Mobile & Tablet
     ========================================================================== */
