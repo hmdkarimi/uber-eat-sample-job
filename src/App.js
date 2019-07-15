@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import {BrowserRouter,Route,Switch  } from 'react-router-dom';
+import {HashRouter,Route,Switch  } from 'react-router-dom';
 import Home from './containers/Home/Home';
 import Header from './containers/Header/Header';
 import Footer from './containers/Footer/Footer';
@@ -11,7 +11,7 @@ class App extends Component {
     return (
 
        
-          <BrowserRouter>   
+          <HashRouter>   
               <Aux>
               
                 <Header/>                
@@ -19,14 +19,14 @@ class App extends Component {
                   <Switch location={this.props.location}>
                      
                         {/* HOME PAGE */}
-                        <Route exact  path="/" component={Home}/> 
+                        <Route   path="/" component={Home}/> 
                       
                   </Switch>  
                                                              
                 <Footer/>
               
               </Aux>
-          </BrowserRouter>
+          </HashRouter>
   
      
     );
