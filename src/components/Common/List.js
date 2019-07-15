@@ -1,6 +1,6 @@
 import React from 'react';
 import Card from "../Common/Card";
-import Flickity from "react-flickity-component"
+import Flickity from "react-flickity-component";
 
 const options = {
     initialIndex: 0,
